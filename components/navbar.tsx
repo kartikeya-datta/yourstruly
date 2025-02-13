@@ -4,6 +4,8 @@ import Menuitems from './menu-items';
 import { GithubIcon, LinkedInIcon } from './social-icons';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 import React from 'react';
+import SocialLinks from './sociallinks';
+
 
 const navItems = [
     { name: "About", href: "#about" },
@@ -51,24 +53,7 @@ export default function Navbar() {
                             ))}
                         </div>
                         <div className="h-6 w-px bg-white/20 mx-2"></div>
-                        <div className="flex gap-4">
-                            <a
-                                className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
-                                href={socialLinks.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
-                            </a>
-                            <a
-                                className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
-                                href={socialLinks.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
-                            </a>
-                        </div>
+                        <SocialLinks />
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -101,24 +86,7 @@ export default function Navbar() {
                                 {items.name}
                             </a>
                         ))}
-                        <div className="flex justify gap-4 pt-4 border-t border-white/5">
-                        <a
-                                className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
-                                href={socialLinks.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
-                            </a>
-                            <a
-                                className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
-                                href={socialLinks.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
-                            </a>
-                        </div>
+                        <SocialLinks />
                     </motion.div>
                 )}
             </div>
