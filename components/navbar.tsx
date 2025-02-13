@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Menuitems from './menu-items';
-import { GithubIcon, LinkedInIcon } from './social-icons';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 import React from 'react';
 import SocialLinks from './sociallinks';
@@ -14,11 +13,6 @@ const navItems = [
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" }
 ];
-
-const socialLinks = {
-    github: "https://github.com/kartikeya-datta",
-    linkedin: "https://www.linkedin.com/in/kartikeya-datta-749b0214a/"
-};
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
