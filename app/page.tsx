@@ -1,3 +1,4 @@
+import EmailSection from "@/components/EmailSection";
 import Footer from "@/components/footer";
 import Hero from "@/components/Hero";
 import Main from "@/components/main";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <Qualifications/>
       <Main/>
+      <EmailSection/>
       <Footer/>
     </div>
   );

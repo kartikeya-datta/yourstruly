@@ -48,29 +48,34 @@ export default function Hero() {
                             I'm a machine learning engineer with a passion for building intelligent systems that can learn and adapt to the world around them. 
                             I specialize in developing machine learning models that can analyze and interpret complex data to solve real-world problems.
                         </motion.p>
-                        <motion.button
-                        initial={{opacity:0, y:10}}
-                        animate={{opacity:1, y:0}}
-                        transition={{delay:1.2, duration:0.3}}
-                        whileHover={{
-                            scale: 1.05,
-                            boxShadow: "0 0 20px 0 rgba(0,0,0,0.1)",
-                            transition: { duration: 0.1 }, // Quick expand
-                        }}
-                        onHoverEnd={(e) => {
-                            if (e.target) {
+                        <motion.a
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 0 20px 0 rgba(0,0,0,0.1)",
+                                transition: { duration: 0.1 },
+                            }}
+                            onHoverEnd={(e) => {
+                                if (e.target) {
                                 (e.target as HTMLElement).style.transform = "scale(1)";
-                            }
-                        }} // Instant shrink back
-                        whileTap={{ scale: 0.95 }} // Click effect
-                        className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border border-white/10 
-                        hover: border-primary/30 transition-all group"
-                        >
-                            <span className="text=content/90 group-hover:text-primary transition-colors font-bold">
-                                Explore Work
+                                }
+                            }}
+                            whileTap={{ scale: 0.95 }}
+                            className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border border-white/10 
+                                        hover:border-primary/30 transition-all group"
+                            href="mailto:kartikeyadatta3@gmail.com?cc=dattakartikeya@gmail.com,s562604@nwmissouri.edu&subject=Hello Kartikeya,this is an offer to hire you!&body=Hi Kartikeya,"
+                            target="_blank"
+                            rel="nofollow noopener noreferrer"
+                            >
+                            <span className="text-content/90 group-hover:text-primary transition-colors font-bold font-mono">
+                                Hire me!
                             </span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-tertiary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                        </motion.button>
+                            
+                            {/* Fix gradient overflow issue */}
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 to-tertiary/10 opacity-0 
+                                            group-hover:opacity-100 transition-opacity duration-300" />
+                        </motion.a>
                     </motion.div>
                     {/* image card */}
                     <motion.div
@@ -102,12 +107,12 @@ export default function Hero() {
                             className="absolute bottom-8 left-8"
                             >
                                 <div className="text-2xl font-bold text-content">
-                                    Based in
+                                    Born In
                                     <motion.span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
                                     animate={{backgroundPosition: ["0% 50%", "100% 50%"]}}
                                     transition={{duration:3, ease: "easeInOut", repeat:Infinity, repeatType:"mirror"}}
                                     style={{backgroundSize: "200% 200%"}}>
-                                        San Franscisco, CA
+                                        Visakhapatnam, India
                                     </motion.span>
                                 </div>
                             </motion.div>

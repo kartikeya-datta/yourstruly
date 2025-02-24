@@ -28,7 +28,7 @@ const projects = [
             { name: "React Native", icon: FaReact, color: "#61DAFB" },
             { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" }
         ],
-        image: "/projects/mobile-app.png",
+        image: "/projects/portfolio.png",
         href: "https://www.google.com"
     },
     {
@@ -40,7 +40,7 @@ const projects = [
             { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
             { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" }
         ],
-        image: "/projects/ecommerce.png",
+        image: "/projects/portfolio.png",
         href: "https://www.google.com"
     }
 ];
