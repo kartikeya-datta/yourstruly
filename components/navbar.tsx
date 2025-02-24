@@ -3,7 +3,12 @@ import { motion } from 'framer-motion';
 import Menuitems from './menu-items';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 import React from 'react';
-import SocialLinks from './sociallinks';
+import { GithubIcon, LinkedInIcon } from './social-icons';
+
+const socialLinks = {
+    github: "https://github.com/kartikeya-datta",
+    linkedin: "https://www.linkedin.com/in/kartikeya-datta-749b0214a/"
+};
 
 
 const navItems = [
@@ -47,7 +52,24 @@ export default function Navbar() {
                             ))}
                         </div>
                         <div className="h-6 w-px bg-white/20 mx-2"></div>
-                        <SocialLinks />
+                                <div className="flex gap-4">
+                                    <a
+                                        className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
+                                        href={socialLinks.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                                    </a>
+                                    <a
+                                        className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
+                                        href={socialLinks.linkedin}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                                    </a>
+                                </div>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -80,7 +102,24 @@ export default function Navbar() {
                                 {items.name}
                             </a>
                         ))}
-                        <SocialLinks />
+                                <div className="flex gap-4">
+                                    <a
+                                        className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
+                                        href={socialLinks.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                                    </a>
+                                    <a
+                                        className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
+                                        href={socialLinks.linkedin}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                                    </a>
+                                </div>
                     </motion.div>
                 )}
             </div>

@@ -2,7 +2,12 @@
 import React from "react";
  // Make sure the path is correct
 import { motion } from "framer-motion";
-import SocialLinks from "./sociallinks";
+import { GithubIcon, LinkedInIcon } from './social-icons';
+
+const socialLinks = {
+    github: "https://github.com/kartikeya-datta",
+    linkedin: "https://www.linkedin.com/in/kartikeya-datta-749b0214a/"
+};
 
 
 const EmailSection = () => {
@@ -21,7 +26,24 @@ const EmailSection = () => {
           Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
         <div className="socials flex justify-center gap-4">
-          <SocialLinks />
+                  <div className="flex gap-4">
+                      <a
+                          className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
+                          href={socialLinks.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                      </a>
+                      <a
+                          className="p-2 rounded-lg bg-white/5 hover:bg-primary/50 transition-colors group"
+                          href={socialLinks.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                      </a>
+                  </div>
         </div>
       </div>
 
