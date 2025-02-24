@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
-import SocialLinks from "./sociallinks";  // Make sure the path is correct
+ // Make sure the path is correct
 import { motion } from "framer-motion";
+import SocialLinks from './sociallinks'; // Relative path to the same folder
+
 
 const EmailSection = () => {
   return (

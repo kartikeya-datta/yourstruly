@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Menuitems from './menu-items';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 import React from 'react';
-import SocialLinks from './sociallinks';
+import SocialLinks from './sociallinks'; // Relative path to the same folder
 
 
 const navItems = [
