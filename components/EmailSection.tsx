@@ -2,7 +2,7 @@
 import React from "react";
  // Make sure the path is correct
 import { motion } from "framer-motion";
-import SocialLinks from './sociallinks'; // Relative path to the same folder
+import SocialLinks from "./sociallinks";
 
 
 const EmailSection = () => {
