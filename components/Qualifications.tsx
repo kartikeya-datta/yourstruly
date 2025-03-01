@@ -43,16 +43,14 @@ const Qualifications = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: React.SetStateAction<string>) => {
     startTransition(() => {
       setTab(id);
     });
   };
 
   return (
-    <section 
-    id = "Qualifications"
-    className="text-white text-center">
+    <section id="Qualifications" className="text-white text-center">
       <div className="flex flex-col items-center py-8 px-4 sm:py-16 xl:px-16">
         {/* Centered Tab Buttons */}
         <div className="flex flex-row justify-center space-x-4">
@@ -78,7 +76,11 @@ const Qualifications = () => {
 
         {/* Content Below */}
         <div className="mt-8">
-          {TAB_DATA.find((t) => t.id === tab)?.content || null}
+          {isPending ? (
+            <p className="text-gray-400 animate-pulse">Loading...</p>
+          ) : (
+            TAB_DATA.find((t) => t.id === tab)?.content || null
+          )}
         </div>
       </div>
     </section>

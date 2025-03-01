@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
  // Make sure the path is correct
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import { GithubIcon, LinkedInIcon } from './social-icons';
 
 const socialLinks = {
@@ -20,10 +20,10 @@ const EmailSection = () => {
 
       {/* Text Section */}
       <div className="z-10 max-w-lg">
-        <h5 className="text-2xl font-bold text-white mb-4">Let's Connect</h5>
+        <h5 className="text-2xl font-bold text-white mb-4">Let us Connect</h5>
         <p className="text-[#ADB7BE] mb-6">
-          I'm currently looking for new opportunities, and my inbox is always open. 
-          Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          I am currently looking for new opportunities, and my inbox is always open. 
+          Whether you have a question or just want to say hi, I will try my best to get back to you!
         </p>
         <div className="socials flex justify-center gap-4">
                   <div className="flex gap-4">

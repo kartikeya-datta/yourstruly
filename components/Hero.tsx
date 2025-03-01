@@ -45,7 +45,7 @@ export default function Hero() {
                         transition={{delay:1.1, duration:0.8, ease: "easeOut"}}
                         className="text-xl text-content/80 mb-8"
                         >
-                            I'm a machine learning engineer with a passion for building intelligent systems that can learn and adapt to the world around them. 
+                            I am a machine learning engineer with a passion for building intelligent systems that can learn and adapt to the world around them. 
                             I specialize in developing machine learning models that can analyze and interpret complex data to solve real-world problems.
                         </motion.p>
                         <motion.a

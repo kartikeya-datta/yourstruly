@@ -4,6 +4,7 @@ import Menuitems from './menu-items';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 import React from 'react';
 import { GithubIcon, LinkedInIcon } from './social-icons';
+import Image from "next/image";
 
 const socialLinks = {
     github: "https://github.com/kartikeya-datta",
@@ -34,7 +35,7 @@ export default function Navbar() {
                         <div className="relative h-12 w-12 rounded-full overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-r from-primary to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]"></div>
                             <div className="absolute inset-[2px] bg-background rounded-full flex items-center justify-center">
-                                <img src="/logo.png" alt="Logo" className="h-10 w-9 object-contain" />
+                                <Image src="/logo.png"  width={36} height={40} alt="Logo" className="h-10 w-9 object-contain" />
                             </div>
                         </div>
                         <span className="text-lg font-semibold text-content/90 group-hover:text-primary transition-colors">
