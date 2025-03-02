@@ -49,7 +49,7 @@ export default function Main() {
     const [selectedTag, setSelectedTag] = useState("All");
     const [showAll, setShowAll] = useState(false);
 
-    const handleTagChange = (tag) => {
+    const handleTagChange = (tag: string) => {
         setSelectedTag(tag);
     };
 
