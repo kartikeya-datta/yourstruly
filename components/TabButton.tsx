@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -6,7 +6,13 @@ const variants = {
   active: { width: "100%" }, // Fully extends under the button
 };
 
-const TabButton = ({ active, selectTab, children }) => {
+interface TabButtonProps {
+  active: boolean;
+  selectTab: () => void;
+  children: ReactNode;
+}
+
+const TabButton: React.FC<TabButtonProps> = ({ active, selectTab, children }) => {
   return (
     <button
       onClick={selectTab}
