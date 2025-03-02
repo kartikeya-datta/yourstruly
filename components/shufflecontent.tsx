@@ -21,7 +21,7 @@ const funFacts = [
 ];
 
 const ShuffleButton = () => {
-    const [shuffledFacts, setShuffledFacts] = useState([]);
+    const [shuffledFacts, setShuffledFacts] = useState<string[]>([]);
     const [currentFact, setCurrentFact] = useState("");
     const [index, setIndex] = useState(0);
 
