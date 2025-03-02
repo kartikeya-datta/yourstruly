@@ -1,12 +1,14 @@
 "use client";
-import { useCallback, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 export default function SmoothWaveCanvas() {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
     let animationFrameId: number;
 
     const resizeCanvas = () => {
