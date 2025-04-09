@@ -1,5 +1,5 @@
 **You can visit My website and see more about me here**
-![YoursTruely](https://yourstruly-z5mw.vercel.app/)
+[YoursTruely](https://yourstruly-z5mw.vercel.app/)
 
 
 
