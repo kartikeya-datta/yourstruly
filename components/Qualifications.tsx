@@ -21,10 +21,36 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-4 text-center">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
+<div className="flex flex-col gap-6">
+  <a className="text-center space-y-2 group transition duration-300" 
+     href="https://www.nwmissouri.edu/" target="_blank" rel="noopener noreferrer">
+    <p className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      Masters in Applied computer science
+    </p>
+    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      Northwest Missouri State University, Maryville MO
+    </p>
+  </a>
+  <a className="text-center space-y-2 group transition duration-300" 
+     href="https://www.gla.ac.in/" target="_blank" rel="noopener noreferrer">
+    <p className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      Bachelors in Electrical engineer
+    </p>
+    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      GLA University, Mathure, UP
+    </p>
+  </a>
+  <a className="text-center space-y-2 group transition duration-300" 
+      href="https://bgis.org/" target="_blank" rel="noopener noreferrer">
+    <p className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      High school
+    </p>
+    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      Bhaktivedanta gurukul and international school, Mathure, UP
+    </p>
+  </a>
+</div>
+
     ),
   },
   {

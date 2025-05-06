@@ -1,12 +1,15 @@
 'use client';
+import { useState, useEffect } from "react";
 import { ParticleCanvas } from "@/hooks/particle";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 
+
 export default function Hero() {
     const {scrollY} = useScroll(); 
     const y = useTransform(scrollY, [0, 500], [0, 100]);
+
     return(
         <section 
         id = "about"
