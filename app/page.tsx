@@ -1,3 +1,4 @@
+import Career from "@/components/Career";
 import EmailSection from "@/components/EmailSection";
 import Footer from "@/components/footer";
 import Hero from "@/components/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero/>
       <Qualifications/>
       <Main/>
+      <Career/>
       <Shuffle/>
       <EmailSection/>
       <Footer/>

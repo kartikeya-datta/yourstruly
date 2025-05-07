@@ -5,10 +5,21 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 
-
 export default function Hero() {
     const {scrollY} = useScroll(); 
     const y = useTransform(scrollY, [0, 500], [0, 100]);
+    const [index, setIndex] = useState(0);
+    const titles = ["Full Stack Developer", "React Developer", "Java Developer","Python Developer"];
+
+
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % titles.length);
+        }, 2000); // Change every 2 seconds
+
+        return () => clearInterval(interval);
+    }, []);
 
     return(
         <section 
@@ -25,31 +36,21 @@ export default function Hero() {
                     className="relative group lg:w-1/2"
                     >
                         <motion.h1
-                        initial={{opacity:0, y:20}}
-                        animate={{opacity:1, y:0}}
-                        transition={{delay:0.5, duration:0.8, ease: "easeOut"}}
-                        className="text-6xl md:text-8xl font-bold bg-gradient-to-r
-                        from-primary via-secondary to-tertiary bg-clip-text text-transparent mb-6"
-                        >
-                            Machine Learning
-                            <br />
-                            <motion.span
-                            initial={{opacity:0 , y:20}}
-                            animate={{opacity:1, y:0}}
-                            transition={{delay:0.8, duration:0.8, ease: "easeOut"}}
-                            className="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent"
-                            >
-                                Engineer
-                            </motion.span>
-                        </motion.h1>
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
+            className="text-6xl md:text-8xl font-bold bg-gradient-to-r
+            from-primary via-secondary to-tertiary bg-clip-text text-transparent mb-6"
+        >
+                {titles[index]}
+        </motion.h1>
                         <motion.p
                         initial={{opacity:0, y:20}}
                         animate={{opacity:1, y:0}}
                         transition={{delay:1.1, duration:0.8, ease: "easeOut"}}
                         className="text-xl text-content/80 mb-8"
                         >
-                            I am a machine learning engineer with a passion for building intelligent systems that can learn and adapt to the world around them. 
-                            I specialize in developing machine learning models that can analyze and interpret complex data to solve real-world problems.
+                            I am a software engineer with 3 years of experience in full-stack development, specializing in Java Spring Boot, microservices, and cloud-based solutions. I excel in building scalable backend systems and responsive front-end interfaces using ReactJS and AngularJS. Proficient in PostgreSQL, MySQL, and MongoDB, I also have hands-on experience with Docker, Kubernetes, and CI/CD pipelines using Jenkins. Passionate about developing secure, high-performance applications that enhance business efficiency.
                         </motion.p>
                         <motion.a
                             initial={{ opacity: 0, y: 10 }}
@@ -67,7 +68,7 @@ export default function Hero() {
                             whileTap={{ scale: 0.95 }}
                             className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border border-white/10 
                                         hover:border-primary/30 transition-all group"
-                            href="mailto:kartikeyadatta3@gmail.com?cc=dattakartikeya@gmail.com,s562604@nwmissouri.edu&subject=Hello Kartikeya,this is an offer to hire you!&body=Hi Kartikeya,"
+                            href="mailto:kartikeyadatta3@gmail.com?cc=dattakartikeya@gmail.com,s562604@nwmissouri.edu&subject=Hello kartik, this is an offer to hire you!&body=Hi Kartik,"
                             target="_blank"
                             rel="nofollow noopener noreferrer"
                             >
@@ -75,10 +76,12 @@ export default function Hero() {
                                 Hire me!
                             </span>
                             
+                            
                             {/* Fix gradient overflow issue */}
                             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 to-tertiary/10 opacity-0 
                                             group-hover:opacity-100 transition-opacity duration-300" />
                         </motion.a>
+
                     </motion.div>
                     {/* image card */}
                     <motion.div
@@ -101,7 +104,7 @@ export default function Hero() {
                         animate={{y: [0, -20, 0]}}
                         transition={{duration:6, ease: "easeInOut", repeat: Infinity}}
                         className="realtive w-full aspect-square rounded-3xl overflow-hidden border border-white/10 bg-surface backdrop-blur-sm">
-                            <Image src= "/portfolio.png" alt='Avatar' fill className="object-cover  scale-110 group-hover:scale-100 transition-transform duration-500" />
+                            <Image src= "/projects/portfolio.png" alt='Avatar' fill className="object-cover  scale-110 group-hover:scale-100 transition-transform duration-500" />
                             <div className="absolute inset-0 bg-gradient-to-r from-back/60 to-transparent"/>
                             <motion.div
                             initial={{opacity:0}}
