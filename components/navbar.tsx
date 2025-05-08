@@ -6,6 +6,7 @@ import React from 'react';
 import { GithubIcon, LinkedInIcon } from './social-icons';
 import Image from "next/image";
 
+
 const socialLinks = {
     github: "https://github.com/kartikeya-datta",
     linkedin: "https://www.linkedin.com/in/kartikeya-datta-749b0214a/",
@@ -18,7 +19,7 @@ const navItems = [
     { name: "Experience", href: "#Career" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
-];
+]; 
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
