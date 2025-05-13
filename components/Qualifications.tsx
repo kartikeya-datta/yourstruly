@@ -53,73 +53,93 @@ const TAB_DATA = [
   content: (
     <div className="space-y-6">
   {/* Machine Learning */}
-  <div className="text-center space-y-2 group transition duration-300">
-    <a
-      href="https://www.coursera.org/learn/machine-learning"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
-    >
-      Machine Learning,
-    </a>
-    <br />
-    <a
-      href="https://www.coursera.org/account/accomplishments/verify/VGQ91M4FKYNK"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
-    >
-      Supervised,
-    </a>{" "}
-    <a
-      href="https://www.coursera.org/account/accomplishments/verify/XHZE71T2L3ET"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
-    >
-      Advanced Learning Algorithms,
-    </a>{" "}
-    <a
-      href="https://www.coursera.org/account/accomplishments/verify/Y3JPA5Y2E2VB"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
-    >
-      Unsupervised
-    </a>
-  </div>
+<div className="text-center space-y-2">
+  <a
+    href="https://www.coursera.org/learn/machine-learning"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-2xl font-semibold text-white transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+  >
+    Machine Learning
+  </a>
+  <br />
+  <a
+    href="https://www.coursera.org/account/accomplishments/verify/VGQ91M4FKYNK"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+  >
+    Supervised
+  </a>{'  '}
+  <a
+    href="https://www.coursera.org/account/accomplishments/verify/XHZE71T2L3ET"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+  >
+    Advanced Learning Algorithms
+  </a>{'  '}
+  <a
+    href="https://www.coursera.org/account/accomplishments/verify/Y3JPA5Y2E2VB"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+  >
+    Unsupervised
+  </a>
+</div>
+
 
   {/* SQL */}
-  <div className="text-center space-y-2 group transition duration-300">
-    <a
-      href="https://www.coursera.org/learn/intro-sql"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
-    >
-      Developing SQL Databases
-    </a>
-    <br />
-    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
-      Learn how to create, manage and query databases using SQL.
-    </p>
-  </div>
+<div className="text-center space-y-2">
+  <a
+    href="https://www.coursera.org/learn/intro-sql"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-2xl font-semibold text-white transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+  >
+    Developing SQL Databases
+  </a>
+  <br />
+  <p className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+    Create, manage and query databases using SQL.
+  </p>
+</div>
+
 
   {/* Python */}
-  <div className="text-center space-y-2 group transition duration-300">
+<div className="text-center space-y-2 transition duration-300">
+  <a
+    href="https://www.coursera.org/specializations/python"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-2xl font-semibold text-white transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+  >
+    Python Programming
+  </a>
+  <br />
+  <div>
     <a
-      href="https://www.coursera.org/specializations/python"
+      href="https://www.coursera.org/account/accomplishments/verify/TZDGUNWY87SY"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+      className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
     >
-      Python Programming
+       Python Data Structures
     </a>
-    <br />
-    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
-      Python Data Structures, Web Access, and Scripting
-    </p>
+    <a
+      href="https://www.coursera.org/account/accomplishments/verify/2H8XJ5J8C9XG"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >{'  '}
+      Web Access, and Scripting
+    </a>
   </div>
+  <p className="text-xl text-gray-300 transition-all duration-300 hover:text-transparent hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+  </p>
+</div>
+
 </div>
 
   ),
