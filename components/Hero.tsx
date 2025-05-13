@@ -104,7 +104,7 @@ export default function Hero() {
                         animate={{y: [0, -20, 0]}}
                         transition={{duration:6, ease: "easeInOut", repeat: Infinity}}
                         className="realtive w-full aspect-square rounded-3xl overflow-hidden border border-white/10 bg-surface backdrop-blur-sm">
-                            <Image src= "/projects/portfolio.png" alt='Avatar' fill className="object-cover  scale-110 group-hover:scale-100 transition-transform duration-500" />
+                            <Image src= "/projects/me.jpeg" alt='Avatar' fill className="object-cover  scale-110 group-hover:scale-100 transition-transform duration-500" />
                             <div className="absolute inset-0 bg-gradient-to-r from-back/60 to-transparent"/>
                             <motion.div
                             initial={{opacity:0}}
