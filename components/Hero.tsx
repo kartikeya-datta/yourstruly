@@ -113,12 +113,12 @@ export default function Hero() {
                             className="absolute bottom-8 left-8"
                             >
                                 <div className="text-2xl font-bold text-content">
-                                    Born In
+                                    Software Engineer
                                     <motion.span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
                                     animate={{backgroundPosition: ["0% 50%", "100% 50%"]}}
                                     transition={{duration:3, ease: "easeInOut", repeat:Infinity, repeatType:"mirror"}}
                                     style={{backgroundSize: "200% 200%"}}>
-                                        Visakhapatnam, India
+                                        Ethustiactic for new Technologies
                                     </motion.span>
                                 </div>
                             </motion.div>

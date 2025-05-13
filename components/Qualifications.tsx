@@ -1,21 +1,15 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
+import SkillsGrid from "./skillgrid";
+
 
 const TAB_DATA = [
+
   {
     title: "Skills",
     id: "skills",
-    content: (
-      <ul className="list-disc pl-4 text-center">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
-    ),
+    content: <SkillsGrid />,
   },
   {
     title: "Education",
@@ -54,15 +48,83 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-4 text-center">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  title: "Certifications",
+  id: "certifications",
+  content: (
+    <div className="space-y-6">
+  {/* Machine Learning */}
+  <div className="text-center space-y-2 group transition duration-300">
+    <a
+      href="https://www.coursera.org/learn/machine-learning"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >
+      Machine Learning,
+    </a>
+    <br />
+    <a
+      href="https://www.coursera.org/account/accomplishments/verify/VGQ91M4FKYNK"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >
+      Supervised,
+    </a>{" "}
+    <a
+      href="https://www.coursera.org/account/accomplishments/verify/XHZE71T2L3ET"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >
+      Advanced Learning Algorithms,
+    </a>{" "}
+    <a
+      href="https://www.coursera.org/account/accomplishments/verify/Y3JPA5Y2E2VB"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >
+      Unsupervised
+    </a>
+  </div>
+
+  {/* SQL */}
+  <div className="text-center space-y-2 group transition duration-300">
+    <a
+      href="https://www.coursera.org/learn/intro-sql"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >
+      Developing SQL Databases
+    </a>
+    <br />
+    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      Learn how to create, manage and query databases using SQL.
+    </p>
+  </div>
+
+  {/* Python */}
+  <div className="text-center space-y-2 group transition duration-300">
+    <a
+      href="https://www.coursera.org/specializations/python"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-2xl font-semibold text-white transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text"
+    >
+      Python Programming
+    </a>
+    <br />
+    <p className="text-xl text-gray-300 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text">
+      Python Data Structures, Web Access, and Scripting
+    </p>
+  </div>
+</div>
+
+  ),
+}
+
 ];
 
 const Qualifications = () => {

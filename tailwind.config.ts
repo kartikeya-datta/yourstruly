@@ -17,6 +17,13 @@ export default {
         content: '#fafafa',
         accent: 'var(--accentColor, #8b5cf6)', // Using secondary as default accent
       },
+      extend: {
+        colors: {
+          primary: '#4ade80', // green-400
+          secondary: '#22d3ee', // cyan-400
+          tertiary: '#818cf8', // indigo-400
+        }
+      },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #8b5cf6 100%)',
         'gradient-secondary': 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f43f5e 100%)',
