@@ -10,7 +10,7 @@ import Image from "next/image";
 const socialLinks = {
     github: "https://github.com/kartikeya-datta",
     linkedin: "https://www.linkedin.com/in/kartikeya-datta-749b0214a/",
-    resume: "https://drive.google.com/file/d/1g19o677ZLSRHZ4MIKo1-8TTGp8RA99rv/view?usp=sharing"
+    resume: "https://docs.google.com/document/d/1ZY8xYntH1yc-rAGl1sADe5pa3U_RHidd/edit?usp=sharing&ouid=108079403905750124098&rtpof=true&sd=true"
 };
 
 const navItems = [
