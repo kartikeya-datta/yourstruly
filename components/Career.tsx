@@ -67,7 +67,7 @@ const Career = () => {
             <div className="flex justify-between w-full sm:w-[45%] lg:w-[40%] pl-[5%] sm:pl-0 gap-0 sm:gap-5 lg:gap-12">
               <div>
                 <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Full Stack Developer</h4>
-                <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">Zelle</h5>
+                <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">Brex</h5>
               </div>
               <h5 className="text-2xl font-medium leading-10 text-content">Sep 2024 – Present</h5>
             </div>
@@ -82,7 +82,7 @@ const Career = () => {
             <div className="flex justify-between w-full sm:w-[45%] lg:w-[40%] pl-[5%] sm:pl-0 gap-0 sm:gap-5 lg:gap-12">
               <div>
                 <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Full Stack Developer</h4>
-                <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">CRISIL Ltd</h5>
+                <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">Capgemini</h5>
               </div>
               <h5 className="text-2xl font-medium leading-10 text-content">Aug 2020 – Jul 2023</h5>
             </div>
