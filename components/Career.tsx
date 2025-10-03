@@ -69,7 +69,7 @@ const Career = () => {
                 <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Full Stack Developer</h4>
                 <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">Zelle</h5>
               </div>
-              <h5 className="text-2xl font-medium leading-10 text-content">Sep 2024 – Present</h5>
+              <h5 className="text-xl font-medium leading-10 text-content">Sep 2024 – Present</h5>
             </div>
             <p className="w-full sm:w-[45%] lg:w-[40%] text-base lg:text-lg font-light pl-[5%] sm:pl-0 mt-2.5 sm:mt-0 text-content/80">
             Worked on the Instant Payment Request System, reducing delivery time by 30% through collaboration with cross-functional teams. Developed React frontends with Redux for real-time status tracking, increasing user interaction by 25%.
@@ -83,7 +83,7 @@ const Career = () => {
                 <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Teaching Assistant</h4>
                 <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">Northwest Missouri State University</h5>
               </div>
-              <h5 className="text-2xl font-medium leading-10 text-content">Jan 2024 – Jul 2024</h5>
+              <h5 className="text-xl font-medium leading-10 text-content">Jan 2024 – Jul 2024</h5>
             </div>
             <p className="w-full sm:w-[45%] lg:w-[40%] text-base lg:text-lg font-light pl-[5%] sm:pl-0 mt-2.5 sm:mt-0 text-content/80">
             Assisted professors in teaching Computer Science courses, including Data Structures & Algorithms and Machine Learning. Guided students in programming with Java, Python, and C++, supported debugging and problem-solving, and reinforced key concepts through lab sessions and one-on-one mentoring. Developed strong communication and collaboration skills while helping students succeed academically.
@@ -94,7 +94,7 @@ const Career = () => {
                 <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Full Stack Developer</h4>
                 <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">CRISIL</h5>
               </div>
-              <h5 className="text-2xl font-medium leading-10 text-content">Aug 2020 – Jul 2023</h5>
+              <h5 className="text-xl font-medium leading-10 text-content">Aug 2020 – Jul 2023</h5>
             </div>
             <p className="w-full sm:w-[45%] lg:w-[40%] text-base lg:text-lg font-light pl-[5%] sm:pl-0 mt-2.5 sm:mt-0 text-content/80">
             Built a real-time Client Portfolio Management System from the ground up. Worked on React + Redux frontends with live updates via WebSockets, increasing user engagement by 40%. Developed Django REST APIs with async processing to cut response times by 35%. Designed and optimized PostgreSQL on Azure to handle millions of transactions, reducing query time by 45%. Secured the app with JWT, AES encryption, and role-based access. Achieved 95% test coverage and automated CI/CD with Azure DevOps, cutting manual QA by 60% and ensuring 99.9% uptime. </p>
