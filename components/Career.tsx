@@ -87,14 +87,27 @@ const Career = () => {
             </div>
             <p className="w-full sm:w-[45%] lg:w-[40%] text-base lg:text-lg font-light pl-[5%] sm:pl-0 mt-2.5 sm:mt-0 text-content/80">
             Assisted professors in teaching Computer Science courses, including Data Structures & Algorithms and Machine Learning. Guided students in programming with Java, Python, and C++, supported debugging and problem-solving, and reinforced key concepts through lab sessions and one-on-one mentoring. Developed strong communication and collaboration skills while helping students succeed academically.
-          
+
+           <div className={`flex flex-col sm:flex-row justify-between mb-12 md:mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{transitionDelay: isVisible ? '500ms' : '0ms'}}>
+            <div className="flex justify-between w-full sm:w-[45%] lg:w-[40%] pl-[5%] sm:pl-0 gap-0 sm:gap-5 lg:gap-12">
+              <div>
+                <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Software Engineer – Guidewire Developer</h4>
+                <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">Infosys Ltd</h5>
+              </div>
+              <h5 className="text-xl font-medium leading-10 text-content">Jan 2022 – Jul 2023</h5>
+            </div>
+            <p className="w-full sm:w-[45%] lg:w-[40%] text-base lg:text-lg font-light pl-[5%] sm:pl-0 mt-2.5 sm:mt-0 text-content/80">
+            As a Software Engineer – Guideware Developer, I worked on enterprise insurance applications using Guideware PolicyCenter and BillingCenter. I developed and configured core insurance workflows with Java, Gosu scripting, and REST/SOAP integrations, enhancing policy and billing automation. I also contributed to CI/CD pipeline optimization using Git, Jenkins, and Docker, while collaborating with cross-functional Agile teams for seamless delivery and production support. </p>
+          </div>
+
+              
           <div className={`flex flex-col sm:flex-row justify-between mb-12 md:mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{transitionDelay: isVisible ? '500ms' : '0ms'}}>
             <div className="flex justify-between w-full sm:w-[45%] lg:w-[40%] pl-[5%] sm:pl-0 gap-0 sm:gap-5 lg:gap-12">
               <div>
                 <h4 className="text-2xl lg:text-3xl font-medium leading-tight tracking-wide w-44 text-content">Full Stack Developer</h4>
                 <h5 className="text-lg font-normal tracking-wide mt-2.5 text-secondary">CRISIL</h5>
               </div>
-              <h5 className="text-xl font-medium leading-10 text-content">Aug 2020 – Jul 2023</h5>
+              <h5 className="text-xl font-medium leading-10 text-content">Aug 2020 – Dec 2021</h5>
             </div>
             <p className="w-full sm:w-[45%] lg:w-[40%] text-base lg:text-lg font-light pl-[5%] sm:pl-0 mt-2.5 sm:mt-0 text-content/80">
             Built a real-time Client Portfolio Management System from the ground up. Worked on React + Redux frontends with live updates via WebSockets, increasing user engagement by 40%. Developed Django REST APIs with async processing to cut response times by 35%. Designed and optimized PostgreSQL on Azure to handle millions of transactions, reducing query time by 45%. Secured the app with JWT, AES encryption, and role-based access. Achieved 95% test coverage and automated CI/CD with Azure DevOps, cutting manual QA by 60% and ensuring 99.9% uptime. </p>
